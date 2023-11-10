@@ -62,6 +62,8 @@ const useCodeMirror = <T extends Element>(
           codeLanguages: languages,
           addKeymap: true,
         }),
+        syntaxHighlighting,
+        oneDark,
         EditorView.lineWrapping,
         EditorView.updateListener.of(update => {
           if (update.changes) {

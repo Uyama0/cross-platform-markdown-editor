@@ -51,20 +51,21 @@
     "@codemirror/highlight": "^0.19.1",
     "@codemirror/history": "^0.19.0",
     "@codemirror/lang-javascript": "^0.19.1",
-    "@codemirror/lang-markdown": "^6.2.2",
+    "@codemirror/lang-markdown": "^0.19.1",
     "@codemirror/language": "^0.19.2",
-    "@codemirror/language-data": "^6.3.1",
+    "@codemirror/language-data": "^0.19.0",
     "@codemirror/matchbrackets": "^0.19.1",
     "@codemirror/state": "^0.19.0",
-    "@codemirror/theme-one-dark": "^6.1.2",
+    "@codemirror/theme-one-dark": "^0.19.0",
+    "assert": "^2.1.0",
     "electron-updater": "6.1.4",
+    "github-markdown-css": "^5.4.0",
+    "process": "^0.11.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "resolutions": {
-    "@codemirror/highlight": "0.19.7",
-    "@codemirror/lang-javascript": "0.19.7",
-    "@codemirror/state": "0.19.9",
-    "@codemirror/view": "0.19.47"
+    "react-dom": "^18.2.0",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-react": "^9.0.1",
+    "unified": "^11.0.4"
   }
 }

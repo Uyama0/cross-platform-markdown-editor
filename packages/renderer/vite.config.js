@@ -32,6 +32,7 @@ const config = {
     assetsDir: '.',
     rollupOptions: {
       input: join(PACKAGE_ROOT, 'index.html'),
+      external: [],
     },
     emptyOutDir: true,
     reportCompressedSize: false,

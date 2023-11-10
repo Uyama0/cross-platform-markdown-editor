@@ -1,7 +1,9 @@
 import React, {useCallback, useState} from 'react';
 
+import Preview from './preview';
 import Editor from './editor';
 
+import './utility';
 import './app.css';
 
 const App = () => {
@@ -17,6 +19,7 @@ const App = () => {
         onChange={handeDocChange}
         initialDoc={doc}
       />
+      <Preview />
     </div>
   );
 };

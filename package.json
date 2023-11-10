@@ -24,7 +24,6 @@
     "lint": "eslint . --ext js,mjs,cjs,ts,mts,cts,vue",
     "typecheck:main": "tsc --noEmit -p packages/main/tsconfig.json",
     "typecheck:preload": "tsc --noEmit -p packages/preload/tsconfig.json",
-    "typecheck:renderer": "vue-tsc --noEmit -p packages/renderer/tsconfig.json",
     "typecheck": "npm run typecheck:main && npm run typecheck:preload && npm run typecheck:renderer",
     "postinstall": "cross-env ELECTRON_RUN_AS_NODE=1 electron scripts/update-electron-vendors.mjs",
     "format": "npx prettier --write \"**/*.{js,mjs,cjs,ts,mts,cts,vue,json}\""
@@ -52,6 +51,15 @@
     "vitest": "0.34.6"
   },
   "dependencies": {
+    "@codemirror/commands": "^6.3.0",
+    "@codemirror/gutter": "^0.19.9",
+    "@codemirror/highlight": "^0.19.8",
+    "@codemirror/history": "^0.19.2",
+    "@codemirror/lang-javascript": "^6.2.1",
+    "@codemirror/language": "^6.9.2",
+    "@codemirror/matchbrackets": "^0.19.4",
+    "@codemirror/state": "github:codemirror/state",
+    "codemirror": "^6.0.1",
     "electron-updater": "6.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

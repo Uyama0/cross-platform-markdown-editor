@@ -39,9 +39,6 @@ const config = {
   test: {
     environment: 'happy-dom',
   },
-  overrides: {
-    '@codemirror/state': '0.19.9',
-  },
   plugins: [],
 };
 

@@ -1,8 +1,8 @@
 import {useEffect, useState, useRef} from 'react';
 import {EditorState} from '@codemirror/state';
 import {EditorView, keymap, highlightActiveLine} from '@codemirror/view';
-import {defaultKeymap, historyKeymap} from '@codemirror/commands';
-import {history} from '@codemirror/history';
+import {defaultKeymap} from '@codemirror/commands';
+import {history, historyKeymap} from '@codemirror/history';
 import {indentOnInput} from '@codemirror/language';
 import {bracketMatching} from '@codemirror/matchbrackets';
 import {lineNumbers, highlightActiveLineGutter} from '@codemirror/gutter';
@@ -51,6 +51,8 @@ const useCodeMirror = <T extends Element>(
     });
     setEditorView(view);
   }, [refContainer]);
+
+  console.log('1');
 
   return [refContainer, editorView];
 };

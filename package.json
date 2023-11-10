@@ -1,12 +1,10 @@
 {
-  "name": "vite-electron-builder",
-  "description": "Secure boilerplate for Electron app based on Vite",
-  "version": "1.0.2",
+  "name": "markdown-editor",
+  "description": "desktop-arkdown-editor",
+  "version": "1.0.3",
   "private": true,
   "author": {
-    "email": "kozackunisoft@gmail.com",
-    "name": "Alex Kozack",
-    "url": "https://kozack.me"
+    "name": "Uyama"
   },
   "main": "packages/main/dist/index.cjs",
   "scripts": {
@@ -48,16 +46,22 @@
     "vitest": "0.34.6"
   },
   "dependencies": {
-    "@codemirror/commands": "^6.3.0",
-    "@codemirror/gutter": "^0.19.9",
-    "@codemirror/highlight": "^0.19.8",
-    "@codemirror/history": "^0.19.2",
-    "@codemirror/lang-javascript": "^6.2.1",
-    "@codemirror/language": "^6.9.2",
-    "@codemirror/matchbrackets": "^0.19.4",
-    "@codemirror/state": "^6.3.1",
+    "@codemirror/commands": "^0.19.1",
+    "@codemirror/gutter": "^0.19.0",
+    "@codemirror/highlight": "^0.19.1",
+    "@codemirror/history": "^0.19.0",
+    "@codemirror/lang-javascript": "^0.19.1",
+    "@codemirror/language": "^0.19.2",
+    "@codemirror/matchbrackets": "^0.19.1",
+    "@codemirror/state": "^0.19.0",
     "electron-updater": "6.1.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "resolutions": {
+    "@codemirror/highlight": "0.19.7",
+    "@codemirror/lang-javascript": "0.19.7",
+    "@codemirror/state": "0.19.9",
+    "@codemirror/view": "0.19.47"
   }
 }

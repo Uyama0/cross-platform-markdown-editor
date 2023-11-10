@@ -52,8 +52,6 @@ const useCodeMirror = <T extends Element>(
     setEditorView(view);
   }, [refContainer]);
 
-  console.log('1');
-
   return [refContainer, editorView];
 };
 

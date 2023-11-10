@@ -4,12 +4,17 @@ import useCodeMirror from './codemirror';
 
 import './editor.css';
 
-interface Props {}
+interface Props {
+  initialDoc: string;
+  onChange: (doc: string) => void;
+}
 
 const Editor: React.FC<Props> = props => {
+  const {onChange} = props;
+  const handleChange = useCallback((state: any) => onChange(state.doc.toString()), [onChange]);
   const [refContainer, editorView] = useCodeMirror<HTMLDivElement>({
     initialDoc: 'Hello',
-    onChange: () => {},
+    onChange: handleChange,
   });
 
   useEffect(() => {

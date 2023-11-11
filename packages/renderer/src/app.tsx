@@ -3,23 +3,22 @@ import React, {useCallback, useState} from 'react';
 import Preview from './preview';
 import Editor from './editor';
 
-import './utility';
 import './app.css';
 
-const App = () => {
-  const [doc, setDoc] = useState<string>('# Hello');
+const App: React.FC = () => {
+  const [doc, setDoc] = useState<string>('# Hello\n');
 
-  const handeDocChange = useCallback((newDoc: any) => {
+  const handleDocChange = useCallback((newDoc: any) => {
     setDoc(newDoc);
   }, []);
 
   return (
     <div className="app">
       <Editor
-        onChange={handeDocChange}
+        onChange={handleDocChange}
         initialDoc={doc}
       />
-      <Preview />
+      <Preview doc={doc} />
     </div>
   );
 };

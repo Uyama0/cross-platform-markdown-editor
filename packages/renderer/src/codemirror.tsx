@@ -16,12 +16,12 @@ import type React from 'react';
 const syntaxHighlighting = HighlightStyle.define([
   {
     tag: tags.heading1,
-    fontSize: '1.6em',
+    fontSize: '1.2em',
     fontWeight: 'bold',
   },
   {
     tag: tags.heading2,
-    fontSize: '1.4em',
+    fontSize: '1.2em',
     fontWeight: 'bold',
   },
   {

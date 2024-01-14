@@ -4,8 +4,8 @@ import {join, resolve} from 'node:path';
 async function createWindow() {
   const browserWindow = new BrowserWindow({
     show: false, // Use the 'ready-to-show' event to show the instantiated BrowserWindow.
-    vibrancy: 'under-window',
     visualEffectState: 'active',
+    backgroundColor: 'abcdef',
     webPreferences: {
       nodeIntegration: false,
       contextIsolation: true,

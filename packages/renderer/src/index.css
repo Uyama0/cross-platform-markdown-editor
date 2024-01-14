@@ -1,4 +1,10 @@
 html,
 body {
-  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+* {
+  background-color: #352f44 !important;
+  color: white;
+  border-bottom: 0 !important;
 }
